@@ -1,16 +1,22 @@
-# This is a sample Python script.
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+icecekler = ["kahve",
+            "muzlu-sut",
+            "cappucione",
+            "filtre-kahve"]
 
+yiyecekler = ["pasta",
+              "borek",
+              "corek",
+              "kruvasan",
+              ]
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+random_icecekler = random.choice(icecekler)
+random_yiyecekler = random.choice(yiyecekler)
+random_yiyecekler_2 = random.choice(yiyecekler)
 
+if random_yiyecekler == random_yiyecekler_2:
+    random_yiyecekler_2 = random.choice(yiyecekler)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(f"Bugunku icecegimiz {random_icecekler} yaninda {random_yiyecekler} ve {random_yiyecekler_2}")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
